@@ -14,11 +14,11 @@ Note: one may need to set correct dynamic link path for libsodium on Ubuntu befo
 
     export LD_LIBRARY_PATH=/usr/local/lib
 
-###Credit to                                                                       
-* Jane Street's Core and Async library                                             
-* Xavier Leroy's Cryptokit                                                         
-* David Sheet's ocaml-libsodium                                                    
-* The *sine qua non* 9gag.com, without which I would have finished months earlier
+###Depends on
+* Jane Street's [Core](https://github.com/janestreet/core) and [Async](https://github.com/janestreet/async)
+* [Cryptokit](https://forge.ocamlcore.org/projects/cryptokit/)
+* [ocaml-sodium](https://github.com/dsheets/ocaml-sodium)
+* The *sine qua non* [9gag.com](http://9gag.com), without which I would have finished months earlier
 
 ###TO-DO
 * Support for libsodium, AES-256-CFB, AES-256-OFB and ARCFour encryptions
@@ -29,7 +29,7 @@ Note: one may need to set correct dynamic link path for libsodium on Ubuntu befo
 
 **A**: In a Monadic way. Specifically, through Async.Deferred.
 
-**Q**: Why encryption? Encryption is not enforced in RFC1928.
+**Q**: Why encryption? Encryption is not enforced in [RFC 1928](http://tools.ietf.org/html/rfc1928).
 
 **A**: Because f*ck GFW. That's why.
 
